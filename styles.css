@@ -1,0 +1,335 @@
+.image-container {
+    overflow: hidden; /* Ensure the zooming image doesn't overflow */   /* Set a fixed height */
+    position: relative; /* For proper positioning */
+}
+
+.image-container img {
+    width: 100%;      /* Make image fill the container */
+    height: auto;     /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Scale the image on hover */
+    cursor: pointer;
+}
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+} */
+
+.section1 {
+    padding: 30px;
+    border-bottom: 1px solid grey;
+    /* border-radius: 15px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between */
+    gap: 130px;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+
+.bharat-connect {
+    margin-left: 15px;
+    height: 30px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.explore-more {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.explore-more:hover {
+    text-decoration: underline;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-container {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.service-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.service-tag {
+    font-size: 12px;
+    color: #28a745;
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Popular Searches Styles */
+.popular-searches {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.service-card {
+    min-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-content {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.service-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.enquire-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Recent Activity Styles */
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.activity-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.business-info {
+    padding: 15px;
+}
+
+.business-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.business-location {
+    color: #666;
+    font-size: 14px;
+}
+
+.business-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.review {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.stars {
+    color: #ffc107;
+    margin: 10px 0;
+}
+
+.review-text {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Related Articles Styles */
+.articles-container {
+    position: relative;
+}
+
+.articles {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.article-card {
+    min-width: 300px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.article-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-content {
+    padding: 15px;
+}
+
+.article-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.explore-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-prev {
+    left: -20px;
+}
+
+.nav-next {
+    right: -20px;
+}
